@@ -124,10 +124,18 @@ Comentários nas Tarefas:
 
 Usuários podem adicionar comentários às tarefas.
 Comentários são registrados no histórico da tarefa.
-Licença
-Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para mais detalhes.
 
-Contato
-Autor: Guilherme
-E-mail: guilherme@example.com
-GitHub: github.com/usuario
+Refinamento - Pergunta ao Product Owner (PO)
+Quais são as funcionalidades mais importantes a serem priorizadas nas próximas iterações?
+
+Melhorias para o Projeto
+Autenticação e Autorização:
+Implementaria um sistema de autenticação para controlar o acesso aos recursos da API. Poderíamos utilizar JWT (JSON Web Token) para autenticação e autorização, garantindo maior segurança ao sistema.
+
+Utilização de Azure como Cloud:
+Subiria a API para a Microsoft Azure, utilizando os serviços de containerização e orquestração disponíveis, como Azure Kubernetes Service (AKS) ou Azure App Service.
+
+Docker para Implantação na Cloud:
+Configuraria a aplicação para rodar em um container do Docker na Azure, permitindo fácil escalabilidade, portabilidade e gerenciamento.
+
+Essas melhorias garantiriam uma arquitetura mais robusta, segura e escalável, alinhada com práticas modernas de desenvolvimento e implantação.

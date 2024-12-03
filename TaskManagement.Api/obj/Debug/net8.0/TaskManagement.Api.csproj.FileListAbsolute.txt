@@ -244,3 +244,4 @@ C:\Users\guibo\RiderProjects\TaskManagementApi\TaskManagement.Api\obj\Debug\net8
 C:\Users\guibo\RiderProjects\TaskManagementApi\TaskManagement.Api\obj\Debug\net8.0\TaskManagement.Api.pdb
 C:\Users\guibo\RiderProjects\TaskManagementApi\TaskManagement.Api\obj\Debug\net8.0\TaskManagement.Api.genruntimeconfig.cache
 C:\Users\guibo\RiderProjects\TaskManagementApi\TaskManagement.Api\obj\Debug\net8.0\ref\TaskManagement.Api.dll
+C:\Users\guibo\RiderProjects\TaskManagementApi\TaskManagement.Api\obj\Debug\net8.0\TaskManagement.Api.sourcelink.json
