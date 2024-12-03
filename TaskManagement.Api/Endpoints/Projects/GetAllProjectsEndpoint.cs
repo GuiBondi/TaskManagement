@@ -4,7 +4,7 @@ using TaskManagement.Core.Services;
 
 namespace TaskManagementApi.Endpoints;
 
-public class GetAllProjects: IEndpoint
+public class GetAllProjectsEndpoint: IEndpoint
 {
     public static void Map(IEndpointRouteBuilder endpoints)
     {

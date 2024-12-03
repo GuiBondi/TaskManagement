@@ -13,7 +13,7 @@ public static class Endpoint
 
         group.MapGroup("projects")
             .WithTags("projects")
-            .MapEndpoint<GetAllProjects>()
+            .MapEndpoint<GetAllProjectsEndpoint>()
             .MapEndpoint<RemoveProjectEndpoint>()
             .MapEndpoint<CreateProjectEndpoint>();
 

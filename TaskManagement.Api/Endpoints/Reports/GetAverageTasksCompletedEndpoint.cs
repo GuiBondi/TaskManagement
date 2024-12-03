@@ -17,7 +17,7 @@ public class GetAverageTasksCompletedEndpoint : IEndpoint
     {
         if (string.IsNullOrWhiteSpace(userRole) || userRole.ToLower() != "manager")
         {
-            return Results.Forbid(); 
+            return Results.StatusCode(401);
         }
         try
         {
