@@ -77,15 +77,6 @@ dotnet ef migrations add NomeDaMigration --project TaskManagement.Core --startup
 
 dotnet ef database update --project TaskManagement.Core --startup-project TaskManagement.Web
 
-Estrutura do Projeto
-TaskManagementAPI/
-├── TaskManagement.Core/ # Lógica de domínio e repositórios
-├── TaskManagement.Web/ # API (endpoints e configuração)
-├── TaskManagement.Tests/ # Testes unitários
-├── Dockerfile # Dockerfile para execução containerizada
-├── README.md # Documentação do projeto
-└── taskmanagement.db # Banco de dados SQLite (gerado automaticamente)
-
 Endpoints Disponíveis
 1. Projetos
    Método	Endpoint	Descrição
