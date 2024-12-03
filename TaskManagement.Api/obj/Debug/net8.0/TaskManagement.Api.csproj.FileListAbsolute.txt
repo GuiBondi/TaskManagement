@@ -230,6 +230,7 @@ C:\Users\guibo\RiderProjects\TaskManagementApi\TaskManagement.Api\obj\Debug\net8
 C:\Users\guibo\RiderProjects\TaskManagementApi\TaskManagement.Api\obj\Debug\net8.0\TaskManagement.Api.csproj.CoreCompileInputs.cache
 C:\Users\guibo\RiderProjects\TaskManagementApi\TaskManagement.Api\obj\Debug\net8.0\TaskManagement.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\guibo\RiderProjects\TaskManagementApi\TaskManagement.Api\obj\Debug\net8.0\TaskManagement.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\guibo\RiderProjects\TaskManagementApi\TaskManagement.Api\obj\Debug\net8.0\TaskManagement.Api.sourcelink.json
 C:\Users\guibo\RiderProjects\TaskManagementApi\TaskManagement.Api\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\guibo\RiderProjects\TaskManagementApi\TaskManagement.Api\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\guibo\RiderProjects\TaskManagementApi\TaskManagement.Api\obj\Debug\net8.0\staticwebassets\msbuild.TaskManagement.Api.Microsoft.AspNetCore.StaticWebAssets.props
@@ -244,4 +245,3 @@ C:\Users\guibo\RiderProjects\TaskManagementApi\TaskManagement.Api\obj\Debug\net8
 C:\Users\guibo\RiderProjects\TaskManagementApi\TaskManagement.Api\obj\Debug\net8.0\TaskManagement.Api.pdb
 C:\Users\guibo\RiderProjects\TaskManagementApi\TaskManagement.Api\obj\Debug\net8.0\TaskManagement.Api.genruntimeconfig.cache
 C:\Users\guibo\RiderProjects\TaskManagementApi\TaskManagement.Api\obj\Debug\net8.0\ref\TaskManagement.Api.dll
-C:\Users\guibo\RiderProjects\TaskManagementApi\TaskManagement.Api\obj\Debug\net8.0\TaskManagement.Api.sourcelink.json

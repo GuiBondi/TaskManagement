@@ -3,4 +3,6 @@
     image: taskmanagementapi
     build:
       context: .
-      dockerfile: TaskManagementApi/Dockerfile
+      dockerfile: TaskManagement.Api/Dockerfile
+    ports:
+      - "8080:8080"

@@ -1,52 +1,30 @@
-﻿#FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
-#USER $APP_UID
-#WORKDIR /app
-#EXPOSE 8080
-#EXPOSE 8081
-#
-#FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-#ARG BUILD_CONFIGURATION=Release
-#WORKDIR /src
-#COPY ["TaskManagementApi/TaskManagementApi.csproj", "TaskManagementApi/"]
-#RUN dotnet restore "TaskManagementApi/TaskManagementApi.csproj"
-#COPY . .
-#WORKDIR "/src/TaskManagementApi"
-#RUN dotnet build "TaskManagementApi.csproj" -c $BUILD_CONFIGURATION -o /app/build
-#
-#FROM build AS publish
-#ARG BUILD_CONFIGURATION=Release
-#RUN dotnet publish "TaskManagementApi.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
-#
-#FROM base AS final
-#WORKDIR /app
-#COPY --from=publish /app/publish .
-#ENTRYPOINT ["dotnet", "TaskManagementApi.dll"]
-# Etapa de build
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+﻿# Etapa 1: Base de construção
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build-env
 WORKDIR /src
 
-# Copiar os arquivos de projeto e solução
-COPY ["TaskManagement.Web/TaskManagement.Web.csproj", "TaskManagement.Web/"]
-COPY ["TaskManagement.Core/TaskManagement.Core.csproj", "TaskManagement.Core/"]
-COPY ["TaskManagement.Tests/TaskManagement.Tests.csproj", "TaskManagement.Tests/"]
+# Copiar arquivos de projeto
+COPY TaskManagement.Api/TaskManagement.Api.csproj TaskManagement.Api/
+COPY TaskManagement.Core/TaskManagement.Core.csproj TaskManagement.Core/
 
-# Restaurar as dependências
-RUN dotnet restore "TaskManagement.Web/TaskManagement.Web.csproj"
+# Restaurar dependências
+WORKDIR /src/TaskManagement.Api
+RUN dotnet restore
 
-# Copiar todo o código
+# Copiar todo o código-fonte e construir
+WORKDIR /src
 COPY . .
+WORKDIR /src/TaskManagement.Api
+RUN dotnet build -c Release -o /app/build
 
-# Publicar a aplicação
-WORKDIR "/src/TaskManagement.Web"
-RUN dotnet publish -c Release -o /app/publish
+# Etapa 2: Publicação
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS publish
+WORKDIR /src
+COPY --from=build-env /src .
+RUN dotnet publish TaskManagement.Api/TaskManagement.Api.csproj -c Release -o /app/publish --no-restore
 
-# Etapa de runtime
-FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS runtime
+# Etapa 3: Runtime
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
-COPY --from=build /app/publish .
-
-# Expor a porta
-EXPOSE 80
-
-# Comando de inicialização
-ENTRYPOINT ["dotnet", "TaskManagement.Web.dll"]
+COPY --from=publish /app/publish .
+EXPOSE 8080
+ENTRYPOINT ["dotnet", "TaskManagement.Api.dll"]
