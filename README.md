@@ -1,4 +1,4 @@
-sk Management API Descrição A Task Management API é uma aplicação desenvolvida em .NET 8 para gerenciar projetos e tarefas. O sistema inclui:
+Task Management API Descrição A Task Management API é uma aplicação desenvolvida em .NET 8 para gerenciar projetos e tarefas. O sistema inclui:
 
 Projetos: Criação, gerenciamento e exclusão com validações específicas. Tarefas: Gerenciamento completo com histórico de alterações e suporte a comentários. Regras de Negócio: Limite de tarefas por projeto. Proibição de exclusão de projetos com tarefas pendentes. Registro automático de histórico de alterações. Controle de prioridades imutáveis após criação. Relatórios de desempenho acessíveis apenas por gerentes. Tecnologias Utilizadas .NET 8 Entity Framework Core (com SQLite e In-Memory para testes) Swagger (documentação da API) Docker (deploy containerizado) xUnit (testes unitários) Moq (mocks para testes) Microsoft.EntityFrameworkCore.InMemory (banco em memória para testes) C# 12 (aproveitando recursos mais recentes do .NET 8) Instalação e Execução Pré-requisitos .NET SDK 8.0+ Docker (opcional, para execução containerizada)
 
