@@ -41,6 +41,8 @@ namespace TaskManagement.test.Repositories
             var task = new TaskItem
             {
                 ProjectId = project.Id,
+                Description = "Teste",
+                DueDate = DateTime.Now,
                 Title = "Tarefa Pendente",
                 Status = (int)TaskItemStatus.Criada,
                 Priority = (int)Priority.Alta

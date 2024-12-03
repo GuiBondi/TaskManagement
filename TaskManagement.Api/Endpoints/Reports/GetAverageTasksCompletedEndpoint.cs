@@ -11,8 +11,14 @@ public class GetAverageTasksCompletedEndpoint : IEndpoint
         endpoints.MapGet("/", Handle);
     }
 
-    private static async Task<IResult> Handle([FromServices] ITaskService service)
+    private static async Task<IResult> Handle(
+        [FromServices] ITaskService service, 
+        [FromHeader(Name = "X-User-Role")] string? userRole)
     {
+        if (string.IsNullOrWhiteSpace(userRole) || userRole.ToLower() != "manager")
+        {
+            return Results.Forbid(); 
+        }
         try
         {
             var average = await service.GetAvergeCompletedTasks();

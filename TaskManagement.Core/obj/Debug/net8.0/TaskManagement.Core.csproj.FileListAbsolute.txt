@@ -12,3 +12,4 @@ C:\Users\guibo\RiderProjects\TaskManagementApi\taskmanagement.core\obj\Debug\net
 C:\Users\guibo\RiderProjects\TaskManagementApi\taskmanagement.core\obj\Debug\net8.0\ref\TaskManagement.Core.dll
 C:\Users\guibo\RiderProjects\TaskManagementApi\taskmanagement.core\bin\Debug\net8.0\TaskManagement.Core.runtimeconfig.json
 C:\Users\guibo\RiderProjects\TaskManagementApi\taskmanagement.core\obj\Debug\net8.0\TaskManagement.Core.genruntimeconfig.cache
+C:\Users\guibo\RiderProjects\TaskManagementApi\TaskManagement.Core\obj\Debug\net8.0\TaskManagement.Core.sourcelink.json

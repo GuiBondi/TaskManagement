@@ -30,7 +30,8 @@ public class TaskRepositoryTests
             Priority = (int)Priority.Alta,
             Status = (int)TaskItemStatus.Pendente,
             DueDate = DateTime.UtcNow.AddDays(5),
-            ProjectId = 1
+            ProjectId = 1,
+            Description = "Teste",
         };
         
         var result = await _taskRepository.AddTaskAsync(task);
@@ -45,6 +46,7 @@ public class TaskRepositoryTests
         var task = new TaskItem
         {
             Title = "Tarefa Existente",
+            Description = "Teste",
             Priority = (int)Priority.Media,
             Status = (int)TaskItemStatus.EmAndamento,
             DueDate = DateTime.UtcNow.AddDays(3),
@@ -68,7 +70,8 @@ public class TaskRepositoryTests
             Priority = (int)Priority.Baixa,
             Status = (int)TaskItemStatus.Pendente,
             DueDate = DateTime.UtcNow.AddDays(2),
-            ProjectId = 1
+            ProjectId = 1,
+            Description = "Teste",
         };
         await _context.TaskItems.AddAsync(task);
         await _context.SaveChangesAsync();

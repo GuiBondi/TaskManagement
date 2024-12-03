@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Ir4k19haPiw=",
+  "dgSpecHash": "t6GIYJL1ozA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\guibo\\RiderProjects\\TaskManagementApi\\TaskManagement.test\\TaskManagement.test.csproj",
+  "projectFilePath": "C:\\Users\\guibo\\RiderProjects\\TaskManagementApi\\taskmanagement.test\\TaskManagement.test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\guibo\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
-    "C:\\Users\\guibo\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
+    "C:\\Users\\guibo\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\guibo\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",
     "C:\\Users\\guibo\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.0\\microsoft.entityframeworkcore.9.0.0.nupkg.sha512",
     "C:\\Users\\guibo\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.0\\microsoft.entityframeworkcore.abstractions.9.0.0.nupkg.sha512",
